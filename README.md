@@ -2,50 +2,90 @@
 TAKE-5
 ======
 
-**BeBoPr expansion board for 5 axes.**
+### **BeBoPr add-on board for 5 axes.**
 
-![](http://imagizer.imageshack.us/v2/800x600q90/661/V9qlAy.jpg)
-*Fully populated Take-5 carrier*
+|![](http://imagizer.imageshack.us/v2/640x480q90/538/Bi6xLJ.jpg)|
+|:-:|
+|*Take-5 carrier populated with 5 stepper driver modules*|
 
 # Introduction
 
-The **TAKE-5 module carrier** is designed as **low cost expansion board** for the **BeBoPr**. It connects to the external stepper driver connector (J5) present on all BeBoPrs, and offers an extra socket for a fifth stepper driver module.
+The **TAKE-5 module carrier** is designed as **low cost expansion board** for the **BeBoPr**. It connects to the external stepper driver connector (**J5**), present on all BeBoPrs, and offers an extra socket for a fifth stepper driver module.
 
-The four stepper modules that were plugged into the BeBoPr move to the corresponding sockets on the **TAKE-5** carrier and only one extra module is needed to **upgrade a BeBoPr to control five axes**.
+The four stepper modules that were plugged into the BeBoPr migrate to the corresponding sockets on the **TAKE-5** carrier and only one extra module is needed to **upgrade a BeBoPr to control five axes**.
+
+|![](http://imagizer.imageshack.us/v2/320x480q90/908/uwIyx3.jpg)|![](http://imagizer.imageshack.us/v2/320x480q90/661/DefH18.jpg)|
+|:-:|:-:|
+|*Side view bare board*|*Side view with driver modules*|
 
 The TAKE-5 carrier is compatible with the PEPPER and **two TAKE-5** carriers combined with a **DECAMUX** can be used to control a total of **10 axes**.
 
 ## The PCB
 
-The board is **easy to assemble** as it holds no SMD parts, but **only through hole components**. All components are placed on the top side of the board. Besides the connectors, three electrolytic capacitors, a single blade fuse socket and six resistors are used.
+The board is **easy to assemble** as it holds no SMD parts, but **only through hole components**. All components are placed on the top side of the board. Besides the connectors, three electrolytic capacitors, a blade fuse socket and six resistors are used.
 
-![](http://imagizer.imageshack.us/v2/640x480q90/537/U1XOKa.png)
-*PCB Top view*
+|![](http://imagizer.imageshack.us/v2/320x240q90/537/U1XOKa.png)|
+|:-:|:-:|
+|*PCB Top view*|
 
 ### PCB Status
 
-At the time of this writing, the first **PCBs are being manufactured**. This first prototype should be ready for testing before the end of September.
+27-09-2014 update: The PCBs have been received and a board was assembled (see pictures) and is being evaluated now.
 
-![](http://www.oshwa.org/wp-content/uploads/2014/03/oshw-logo-100-px.png)
+At the time of this writing, the first **PCBs are being manufactured**. This first prototype should be ready for testing before the end of September. The PCB will be made available for ordering via OSH Park, Gerbers and a BOM will follow after proper testing.
+![](http://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Ohw-logo.svg/278px-Ohw-logo.svg.png)
 
-The **PCB will be Open Source Hardware** and made available for ordering via **OSH Park**, Gerbers and a BOM will follow after successful testing.
 
 ## Configuration
 
-Each stepper driver seat has three jumpers to set the microstepping. These jumpers replace the DIP switches that are present on the BeBoPr boards and are easier to obtain (and cheaper too).
+Each stepper driver seat has three jumpers to set the microstepping mode. These jumpers replace the DIP switches that are present on the BeBoPr boards and are easier to obtain (and cheaper too).
 
-An optional jumper field is for setting the decay mode. If PanuCatt SD8825 SureStepr modules are used, a driver's decay mode can be configured with this jumper. 
+An optional jumper field is for setting the decay mode. If PanuCatt SD8825 SureStepr modules are used, the driver's decay mode can be configured with this jumper (see below).
+
+|![](http://imagizer.imageshack.us/v2/640x480q90/674/Rl3ZNS.jpg)|
+|:-:|
+|*Partially populated board, without decay mode jumpers*|
 
 ## Compatibility
 
-The **Take-5** carrier has the same footprint as a **PEPPER** board. The carrier will work with the **BeBoPr++**, the **BeBoPr++** and a **BeBoPr + R1 Bridge**. The R0 bridge is not supported as some of the signals for the 5th stepper are not present.
+### Mechanical
 
-Stepper power is applied via the same type of connector as used on the BeBoPrs. The Molex KK stepper motor connectors are also the same as used on the BeBopr and PEPPER boards. Of course, any connector that fits on the board could be used. For the blade fuse, either one of two different sizes of sockets can be mounted. 
+The **Take-5** carrier has the same footprint and mounting holes as the **PEPPER** board. The carrier will work with the **BeBoPr++**, the **BeBoPr++** and a **BeBoPr + R1 Bridge**. The R0 bridge is not supported as some of the signals for the 5th stepper are not present.
+
+### Connectors
+
+- A 16-wire flat-cable connects the TAKE-5 to the BeBoPr. A boxed header prevents accidental cable reversal.
+- Stepper power is applied via the same type of connector as used on the BeBoPr.
+- The stepper motor connectors (Molex KK) are the same as used on the BeBopr and PEPPER boards.
+
+Of course, any connector that fits on the board could be used if it's properly dimensioned for the currents used.
+
+### Fuse
+
+The board is designed to mount an automotive blade fuse that protects the stepper power. Either a complete (isolated) socket, or dual clips can be mounted to hold the fuse.
+
+The board can be assembled to accept either a standard, a mini, or a low profile fuse, depending on the kind of socket mounted:
+
+
+| Part Type | For Fuse Type | Part No.      | Count |
+|:----------|:-------------:|:--------------|:-----:|
+| CLIP      | ALL           | KEYSTONE 3557 |   2   |
+| SOCKET    | STANDARD      | KEYSTONE 3557-2 | 1   |
+| SOCKET    | MINI          | KEYSTONE 3568 |   1   |
 
 ## SureStepr SD8825
 
 Besides sockets for the standard 16-pin stepper modules, optionally receptacles for the three extra signals from the **PanuCatt SD8825** driver modules can be installed. This allows to set the decay mode (fast, slow or mixed) with a jumper on the carrier (instead of soldering wires to the SD8825).
 
-## Expanding to 10 axes
+|![](http://imagizer.imageshack.us/v2/320x240q90/674/8UVIwY.jpg	)|![](http://imagizer.imageshack.us/v2/320x240q90/673/IAYnDh.jpg)|
+|:-:|:-:|
+| *Extra pins for the SD8825*| *Bottom view with extra pins* |
 
-Just like the [**PEPPER**](https://github.com/modmaker/BeBoPr-plus-plus/wiki/PEPPER-Intro), this board can be used in combination with the [**DECAMUX**](https://github.com/modmaker/DECAMUX) to expand to number of axes to 10. Any combination of PEPPER and TAKE-5 boards can be used on the DECAMUX. But of course, **only the PEPPER has full software control** over the driver settings and allows to **run motors at the full 2.5 Ampere** driver current.
+|![](http://imagizer.imageshack.us/v2/640x480q90/911/ueRcPR.jpg)|
+|:-:|
+|*Fully populated board with decay mode jumpers for SD8825*|
+
+
+## Expanding to control 10 axes
+
+Just like the [**PEPPER**](https://github.com/modmaker/BeBoPr-plus-plus/wiki/PEPPER-Intro), this board can be used in combination with the [**DECAMUX**](https://github.com/modmaker/DECAMUX) to expand to number of axes to 10. Any combination of PEPPER and/or TAKE-5 boards can be used on the DECAMUX. But of course, **only the PEPPER has full software control** over the driver settings and allows to **run motors at the full 2.5 Ampere** driver current.
