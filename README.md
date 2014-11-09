@@ -2,11 +2,14 @@
 TAKE-5
 ======
 
+Last changed: 2014-10-09 - Added reference to OSH Park project for boards and updated some text.
+
 ### **BeBoPr add-on board for 5 axes.**
 
 |![](http://imagizer.imageshack.us/v2/640x480q90/538/Bi6xLJ.jpg)|
 |:-:|
 |*Take-5 carrier populated with 5 stepper driver modules*|
+
 
 # Introduction
 
@@ -16,24 +19,26 @@ The four stepper modules that were plugged into the BeBoPr migrate to the corres
 
 |![](http://imagizer.imageshack.us/v2/320x480q90/908/uwIyx3.jpg)|![](http://imagizer.imageshack.us/v2/320x480q90/661/DefH18.jpg)|
 |:-:|:-:|
-|*Side view bare board*|*Side view with driver modules*|
+|*Side view bare board*|*Side view with driver modules plugged in*|
 
-The TAKE-5 carrier is compatible with the PEPPER and **two TAKE-5** carriers combined with a **DECAMUX** can be used to control a total of **10 axes**.
+The TAKE-5 carrier is compatible with the **DECAMUX**, **PEPPER** and **XTRUDR**. Use a **DECAMUX** and two expansion boards to control up to **10 axes**.
 
-## The PCB
 
-The board is **easy to assemble** as it holds no SMD parts, but **only through hole components**. All components are placed on the top side of the board. Besides the connectors, three electrolytic capacitors, a blade fuse socket and six resistors are used.
+## How to buy / build
 
-|![](http://imagizer.imageshack.us/v2/320x240q90/537/U1XOKa.png)|
+|![](http://www.oshwa.org/wp-content/uploads/2014/03/oshw-logo-100-px.png)|![](http://imagizer.imageshack.us/v2/480x360q90/537/U1XOKa.png)|
 |:-:|:-:|
-|*PCB Top view*|
+||*PCB Top view*|
 
-### PCB Status
 
-27-09-2014 update: The PCBs have been received and a board was assembled (see pictures) and is being evaluated now.
+Basic soldering skills is all that's needed to assemble the TAKE-5 as it holds no SMD parts.
+Only **through hole components** are used and all are located on the top side of the board. Besides the connectors, three electrolytic capacitors, a blade fuse with socket, and six resistors are used.
 
-At the time of this writing, the first **PCBs are being manufactured**. This first prototype should be ready for testing before the end of September. The PCB will be made available for ordering via OSH Park, Gerbers and a BOM will follow after proper testing.
-![](http://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Ohw-logo.svg/278px-Ohw-logo.svg.png)
+The [TAKE-5 board design](https://github.com/modmaker/TAKE-5/blob/master/pcb/TAKE-5_schematics.pdf) is available as **Open Source Hardware**. Only basic soldering skills are needed since the board uses leaded components only.
+
+Anyone used to soldering SMD components should be able to assemble this board. L, R and C components are all (large) 0805 parts, the latches are fine pitch but, when using plenty of flux, easy to solder.
+
+The PCB design is open hardware and available as shared project at **OSH Park**. A set of 3 PCBs can be [ordered directly from OSH Park](https://oshpark.com/shared_projects/5rlN100P) for around $40 including shipping. The [BOM cost](https://github.com/modmaker/TAKE-5/blob/master/pcb/TAKE-5_BOM.pdf) is around EUR 11 (EU|Farnell), or $16(US|Newark).
 
 
 ## Configuration
@@ -50,7 +55,7 @@ An optional jumper field is for setting the decay mode. If PanuCatt SD8825 SureS
 
 ### Mechanical
 
-The **Take-5** carrier has the same footprint and mounting holes as the **PEPPER** board. The carrier will work with the **BeBoPr++**, the **BeBoPr++** and a **BeBoPr + R1 Bridge**. The R0 bridge is not supported as some of the signals for the 5th stepper are not present.
+The **Take-5** carrier has the same footprint and mounting holes as the **PEPPER** board. The carrier will work with the **BeBoPr++**, the **BeBoPr++** and a **BeBoPr + R1 Bridge**. The R0 version bridge is not supported as some of the signals for the 5th stepper are not present.
 
 ### Connectors
 
@@ -67,11 +72,11 @@ The board is designed to mount an automotive blade fuse that protects the steppe
 The board can be assembled to accept either a standard, a mini, or a low profile fuse, depending on the kind of socket mounted:
 
 
-| Part Type | For Fuse Type | Part No.      | Count |
-|:----------|:-------------:|:--------------|:-----:|
-| CLIP      | ALL           | KEYSTONE 3557 |   2   |
-| SOCKET    | STANDARD      | KEYSTONE 3557-2 | 1   |
-| SOCKET    | MINI          | KEYSTONE 3568 |   1   |
+| Part Type | For Fuse Type | Part No.        | Count |
+|:----------|:-------------:|:----------------|:-----:|
+| CLIP      | ALL           | KEYSTONE 3557   |   2   |
+| SOCKET    | STANDARD      | KEYSTONE 3557-2 |   1   |
+| SOCKET    | MINI          | KEYSTONE 3568   |   1   |
 
 ## SureStepr SD8825
 
@@ -86,6 +91,6 @@ Besides sockets for the standard 16-pin stepper modules, optionally receptacles 
 |*Fully populated board with decay mode jumpers for SD8825*|
 
 
-## Expanding to control 10 axes
+## Expanding to up to 10 axes
 
-Just like the [**PEPPER**](https://github.com/modmaker/BeBoPr-plus-plus/wiki/PEPPER-Intro), this board can be used in combination with the [**DECAMUX**](https://github.com/modmaker/DECAMUX) to expand to number of axes to 10. Any combination of PEPPER and/or TAKE-5 boards can be used on the DECAMUX. But of course, **only the PEPPER has full software control** over the driver settings and allows to **run motors at the full 2.5 Ampere** driver current.
+Just like the [**PEPPER**](https://github.com/modmaker/BeBoPr-plus-plus/wiki/PEPPER-Intro), this board can be used in combination with the [**DECAMUX**](https://github.com/modmaker/DECAMUX) to expand to number of axes. Any combination of PEPPER and/or TAKE-5 boards can be used on the DECAMUX. But **only the PEPPER gives full software control** over the driver settings and allows to **run motors at the full 2.5 Ampere** driver current.
