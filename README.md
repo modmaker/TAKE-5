@@ -2,7 +2,21 @@
 TAKE-5
 ======
 
-Last changed: 2014-10-09 - Added reference to OSH Park project for boards and updated some text.
+Last changed: 2014-12-03 - Added kit information and introduction deal.
+
+## Special introduction deal
+
+Until December 14th, 2014, while stock lasts, and only if ordered together with a BeBoPr++, the TAKE-5 kit can be bought at the very special price of only EUR 7.50 for the complete kit. The kit contents is shown on the picture below.
+
+The TAKE-5 kit contains all the parts you need to assemble the board. It also contains the ribbon cable _and_ the female connector should you want to attach the board directly onto the BeBoPr. This is a special introduction deal, that's why the price is so low.
+
+If you want to use the board with Panucatt stepper drivers and the extra decay jumper, you do need to add these (optional) parts yourself (see the BOM).
+
+After assembly this allows you to use the BeBoPr++ for 5 axes, or up to 10 after adding a DECAMUX and a second driver board (either PEPPER, TAKE-5 or XTRUDR).
+
+|![](http://imagizer.imageshack.us/v2/640x480q90/673/pXguZY.jpg)|
+|:-:|
+|*Take-5 DIY kit contents*|
 
 ### **BeBoPr add-on board for 5 axes.**
 
@@ -30,16 +44,9 @@ The TAKE-5 carrier is compatible with the **DECAMUX**, **PEPPER** and **XTRUDR**
 |:-:|:-:|
 ||*PCB Top view*|
 
-
-Basic soldering skills is all that's needed to assemble the TAKE-5 as it holds no SMD parts.
-Only **through hole components** are used and all are located on the top side of the board. Besides the connectors, three electrolytic capacitors, a blade fuse with socket, and six resistors are used.
-
 The [TAKE-5 board design](https://github.com/modmaker/TAKE-5/blob/master/pcb/TAKE-5_schematics.pdf) is available as **Open Source Hardware**. Only basic soldering skills are needed since the board uses leaded components only.
 
-Anyone used to soldering SMD components should be able to assemble this board. L, R and C components are all (large) 0805 parts, the latches are fine pitch but, when using plenty of flux, easy to solder.
-
 The PCB design is open hardware and available as shared project at **OSH Park**. A set of 3 PCBs can be [ordered directly from OSH Park](https://oshpark.com/shared_projects/5rlN100P) for around $40 including shipping. The [BOM cost](https://github.com/modmaker/TAKE-5/blob/master/pcb/TAKE-5_BOM.pdf) is around EUR 11 (EU|Farnell), or $16(US|Newark).
-
 
 ## Configuration
 
@@ -49,7 +56,7 @@ An optional jumper field is for setting the decay mode. If PanuCatt SD8825 SureS
 
 |![](http://imagizer.imageshack.us/v2/640x480q90/674/Rl3ZNS.jpg)|
 |:-:|
-|*Partially populated board, without decay mode jumpers*|
+|*Normal board population, without the optional decay mode jumpers*|
 
 ## Compatibility
 
