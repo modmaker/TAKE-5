@@ -2,7 +2,7 @@
 TAKE-5
 ======
 
-Last changed: 2014-12-03 - Added kit information and introduction deal.
+Last changed: 2014-12-07 - Added link to animated gif with suggested assembly order.
 
 ## Special introduction deal
 
@@ -17,6 +17,8 @@ After assembly this allows you to use the BeBoPr++ for 5 axes, or up to 10 after
 |![](http://imagizer.imageshack.us/v2/640x480q90/673/pXguZY.jpg)|
 |:-:|
 |*Take-5 DIY kit contents*|
+
+[Click here](http://imageshack.com/a/img907/6414/52fuZa.gif) for the order of assembly. This is the version that uses the ribbon cable to connect to the BeBoPr. By mounting the female 16 pin connector is mounted to the bottom side of the PCB (instead of the header on the top side), a board is created that plugs directly onto the BeBoPr. Two of the mounting holes of the BeBoPr align with those of the TAKE-5 and with two long screws and a couple of spacers, a rigid construction can be made. 
 
 ### **BeBoPr add-on board for 5 axes.**
 
