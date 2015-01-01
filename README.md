@@ -2,11 +2,11 @@
 TAKE-5
 ======
 
-Last changed: 2014-12-07 - Added link to animated gif with suggested assembly order.
+Last changed: 2015-01-01 - Introduction deal has ended.
 
-## Special introduction deal
+## Special deal
 
-Until December 14th, 2014, while stock lasts, and only if ordered together with a BeBoPr++, the TAKE-5 kit can be bought at the very special price of only EUR 7.50 for the complete kit. The kit contents is shown on the picture below.
+While stock lasts, and if bought together with a BeBoPr++, the TAKE-5 kit can be bought at the very special price of only EUR 15.00 for the complete kit. The kit contents is shown on the picture below.
 
 The TAKE-5 kit contains all the parts you need to assemble the board. It also contains the ribbon cable _and_ the female connector should you want to attach the board directly onto the BeBoPr. This is a special introduction deal, that's why the price is so low.
 
