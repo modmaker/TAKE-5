@@ -2,7 +2,7 @@
 TAKE-5
 ======
 
-Last changed: 2015-01-01 - Introduction deal has ended.
+Last changed: 2015-01-18 - Fixed BOM links.
 
 ## Special deal
 
@@ -10,7 +10,7 @@ While stock lasts, and if bought together with a BeBoPr++, the TAKE-5 kit can be
 
 The TAKE-5 kit contains all the parts you need to assemble the board. It also contains the ribbon cable _and_ the female connector should you want to attach the board directly onto the BeBoPr. This is a special introduction deal, that's why the price is so low.
 
-If you want to use the board with Panucatt stepper drivers and the extra decay jumper, you do need to add these (optional) parts yourself (see the BOM).
+If you want to use the board with Panucatt stepper drivers and the extra decay jumper, you do need to add these (optional) parts yourself (see the [BOM](https://github.com/modmaker/TAKE-5/blob/master/pcb/TAKE-5_BOM.ods)).
 
 After assembly this allows you to use the BeBoPr++ for 5 axes, or up to 10 after adding a DECAMUX and a second driver board (either PEPPER, TAKE-5 or XTRUDR).
 
@@ -48,7 +48,7 @@ The TAKE-5 carrier is compatible with the **DECAMUX**, **PEPPER** and **XTRUDR**
 
 The [TAKE-5 board design](https://github.com/modmaker/TAKE-5/blob/master/pcb/TAKE-5_schematics.pdf) is available as **Open Source Hardware**. Only basic soldering skills are needed since the board uses leaded components only.
 
-The PCB design is open hardware and available as shared project at **OSH Park**. A set of 3 PCBs can be [ordered directly from OSH Park](https://oshpark.com/shared_projects/5rlN100P) for around $40 including shipping. The [BOM cost](https://github.com/modmaker/TAKE-5/blob/master/pcb/TAKE-5_BOM.pdf) is around EUR 11 (EU|Farnell), or $16(US|Newark).
+The PCB design is open hardware and available as shared project at **OSH Park**. A set of 3 PCBs can be [ordered directly from OSH Park](https://oshpark.com/shared_projects/5rlN100P) for around $40 including shipping. The [BOM cost](https://github.com/modmaker/TAKE-5/blob/master/pcb/TAKE-5_BOM.ods) is around EUR 11 (EU|Farnell), or $16(US|Newark).
 
 ## Configuration
 
